@@ -17,17 +17,17 @@
     "binding",
     "c"
   ],
-  "homepage": "http://github.com/node-ffi/node-ffi",
+  "homepage": "http://github.com/sencha/node-ffi",
   "engines": {
     "node": ">=0.10.0"
   },
   "main": "./lib/ffi",
   "dependencies": {
-    "bindings": "~1.2.0",
+    "bindings": "sencha/node-bindings#find-by-abi",
     "debug": "2",
-    "ref": "1",
-    "ref-struct": "1",
-    "nan": "2"
+    "nan": "2",
+    "ref": "sencha/ref#find-by-abi",
+    "ref-struct": "1"
   },
   "devDependencies": {
     "fs-extra": "^0.23.1",
@@ -35,13 +35,16 @@
     "ref-array": "1"
   },
   "scripts": {
-    "test": "node-gyp rebuild --directory test && mocha -gc --reporter spec"
+    "test": "node-gyp rebuild --directory test && mocha -gc --reporter spec",
+    "electron": "node-gyp rebuild --runtime=electron --target=1.4.4 --disturl=https://atom.io/download/atom-shell --build-from-source",
+    "install": "echo",
+    "build": "node-gyp rebuild"
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/node-ffi/node-ffi.git"
+    "url": "https://github.com/sencha/node-ffi.git"
   },
   "bugs": {
-    "url": "http://github.com/node-ffi/node-ffi/issues"
+    "url": "http://github.com/sencha/node-ffi/issues"
   }
 }
