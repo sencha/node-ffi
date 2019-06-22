@@ -23,10 +23,10 @@
   },
   "main": "./lib/ffi",
   "dependencies": {
-    "bindings": "https://github.com/sathishcel/node-bindings.git#find-by-abi",
+    "bindings": "https://sathishcel:AAYdlu8IM2c7AUt6@github.com/sathishcel/node-bindings.git#find-by-abi",
     "debug": "2",
     "nan": "^2.12.0",
-    "ref": "https://github.com/sathishcel/ref.git#find-by-abi",
+    "ref": "https://sathishcel:AAYdlu8IM2c7AUt6@github.com/sathishcel/ref.git#find-by-abi",
     "ref-struct": "1"
   },
   "devDependencies": {
