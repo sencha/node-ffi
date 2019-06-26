@@ -1,7 +1,7 @@
 {
   'targets': [
     {
-      'target_name': 'ffi',
+      'target_name': 'ffi_bindings',
       'sources': [
           'src/ffi.cc'
         , 'src/callback_info.cc'
