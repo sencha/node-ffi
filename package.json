@@ -1,6 +1,6 @@
 {
   "name": "ffi",
-  "version": "2.3.0",
+  "version": "2.2.0",
   "license": "MIT",
   "author": "Rick Branson",
   "contributors": [
@@ -23,10 +23,10 @@
   },
   "main": "./lib/ffi",
   "dependencies": {
-    "bindings": "https://github.com/sathishcel/node-bindings.git#find-by-abi",
+    "bindings": "CelestialSystem/node-bindings#find-by-abi",
     "debug": "2",
-    "nan": "^2.12.0",
-    "ref": "https://github.com/sathishcel/ref.git#find-by-abi",
+    "nan": "2",
+    "ref": "CelestialSystem/ref#find-by-abi",
     "ref-struct": "1"
   },
   "devDependencies": {
@@ -42,9 +42,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sencha/node-ffi.git"
+    "url": "https://github.com/CelestialSystem/node-ffi.git"
   },
   "bugs": {
-    "url": "http://github.com/sencha/node-ffi/issues"
+    "url": "http://github.com/CelestialSystem/node-ffi/issues"
   }
 }
