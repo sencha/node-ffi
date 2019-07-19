@@ -85,7 +85,7 @@ V8 and 64-bit Types
 
 Internally, V8 stores integers that will fit into a 32-bit space in a 32-bit
 integer, and those that fall outside of this get put into double-precision
-floating point (FP) numbers. This is problematic because FP numbers are imprecise.
+floating point numbers. This is problematic because FP numbers are imprecise.
 To get around this, the methods in node-ffi that deal with 64-bit integers return
 strings and can accept strings as parameters.
 
@@ -97,6 +97,8 @@ binding version of `strtoul()` to an FFI version of `strtoul()` shows that the
 native hard-coded binding is orders of magnitude faster. So don't just use the
 C version of a function just because it's faster. There's a significant cost in
 FFI calls, so make them worth it.
+
+Windows it supports Node 10.x version.
 
 License
 -------
